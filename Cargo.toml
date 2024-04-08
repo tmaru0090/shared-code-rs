@@ -1,0 +1,8 @@
+[package]
+name = "shared-code"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.81"
+thiserror = "1.0.58"
