@@ -160,7 +160,7 @@ fn main() -> Res<()> {
                         if metadata.is_file() {
                             println!("The specified path exists: {:?}", path.clone());
                         } else if metadata.is_dir() {
-                            return Err(anyhow!("Path exits but is neither no file"));
+                            println!("The specified path exists: {:?}", path.clone());
                         } else {
                             return Err(anyhow!("Path exits but is neither file nor directory"));
                         }
@@ -173,6 +173,7 @@ fn main() -> Res<()> {
                 let out = Command::new("powershell")
                     .arg("-Command")
                     .arg("cp")
+                    .arg("-r")
                     .arg(path.clone())
                     .arg(".")
                     .output()?;
@@ -188,7 +189,7 @@ fn main() -> Res<()> {
                         if metadata.is_file() {
                             println!("The specified path exists: {:?}", shared_code_path);
                         } else if metadata.is_dir() {
-                            return Err(anyhow!("Path exits but is neither no file"));
+                            println!("The specified path exists: {:?}", path.clone());
                         } else {
                             return Err(anyhow!("Path exits but is neither file nor directory"));
                         }
@@ -201,6 +202,7 @@ fn main() -> Res<()> {
                 let out = Command::new("powershell")
                     .arg("-Command")
                     .arg("cp")
+                    .arg("-r")
                     .arg(path.clone())
                     .arg(".")
                     .output()?;
@@ -216,7 +218,7 @@ fn main() -> Res<()> {
                         if metadata.is_file() {
                             println!("The specified path exists: {:?}", shared_code_path);
                         } else if metadata.is_dir() {
-                            return Err(anyhow!("Path exits but is neither no file"));
+                            println!("The specified path exists: {:?}", path.clone());
                         } else {
                             return Err(anyhow!("Path exits but is neither file nor directory"));
                         }
@@ -229,6 +231,7 @@ fn main() -> Res<()> {
                 let out = Command::new("powershell")
                     .arg("-Command")
                     .arg("cp")
+                    .arg("-r")
                     .arg(path.clone())
                     .arg(".")
                     .output()?;
@@ -244,7 +247,7 @@ fn main() -> Res<()> {
                         if metadata.is_file() {
                             println!("The specified path exists: {:?}", shared_code_path);
                         } else if metadata.is_dir() {
-                            return Err(anyhow!("Path exits but is neither no file"));
+                            println!("The specified path exists: {:?}", path.clone());
                         } else {
                             return Err(anyhow!("Path exits but is neither file nor directory"));
                         }
@@ -257,6 +260,7 @@ fn main() -> Res<()> {
                 let out = Command::new("powershell")
                     .arg("-Command")
                     .arg("cp")
+                    .arg("-r")
                     .arg(path.clone())
                     .arg(".")
                     .output()?;
@@ -272,7 +276,7 @@ fn main() -> Res<()> {
                         if metadata.is_file() {
                             println!("The specified path exists: {:?}", shared_code_path);
                         } else if metadata.is_dir() {
-                            return Err(anyhow!("Path exits but is neither no file"));
+                            println!("The specified path exists: {:?}", path.clone());
                         } else {
                             return Err(anyhow!("Path exits but is neither file nor directory"));
                         }
@@ -285,6 +289,7 @@ fn main() -> Res<()> {
                 let out = Command::new("powershell")
                     .arg("-Command")
                     .arg("cp")
+                    .arg("-r")
                     .arg(path.clone())
                     .arg(".")
                     .output()?;
